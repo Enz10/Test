@@ -5,7 +5,7 @@ typedef struct
 {
     char nombre[50];
     int edad;
-    int estado=0;//inicializo estados
+    int estado;//inicializo estados
     int dni;
 }EPersona;
 

@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "funciones.h"
 
 
 int main()
 {
-    int persona[20];
+    EPersona Ingreso[20];
     int i;
     char seguir='s';
     int opcion=0;
@@ -26,13 +27,14 @@ int main()
                 for(i=0;i<20;i++)
                 {
                     printf("Ingrese nombre: \n");
-                    gets(Epersona[i].nombre);
+                    fflush(stdin);
+                    gets(Ingreso[i].nombre);
 
                     printf("Ingrese edad: \n");
-                    scanf("%d",&Epersona[i].edad);
+                    scanf("%d",&Ingreso[i].edad);
 
                     printf("Ingrese DNI: \n");
-                    scanf("%d",&Epersona[i].dni);
+                    scanf("%d",&Ingreso[i].dni);
                 }
                 break;
             case 2:
